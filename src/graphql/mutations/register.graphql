@@ -1,0 +1,13 @@
+mutation Register($username: String!, $email: String!, $password: String!) {
+  register(
+    options: { username: $username, password: $password, email: $email }
+  ) {
+    ...UserResponseDto
+  }
+}
+
+mutation ChangePassword($newPassword: String!, $token: String!) {
+  changePassword(newPassword: $newPassword, token: $token) {
+    ...UserResponseDto
+  }
+}

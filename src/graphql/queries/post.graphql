@@ -1,0 +1,5 @@
+query Posts($limit: Int, $index: Int) {
+  posts(limit: $limit, index: $index) {
+    ...PostsResponseDto
+  }
+}

@@ -1,0 +1,15 @@
+fragment PostsResponseDto on PostsResponse {
+  data {
+    id
+    title
+    text
+  }
+  page {
+    next
+    current
+    previous
+    total
+    limit
+    index
+  }
+}

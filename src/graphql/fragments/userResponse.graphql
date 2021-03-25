@@ -1,0 +1,9 @@
+fragment UserResponseDto on UserResponse {
+  errors {
+    field
+    message
+  }
+  user {
+    ...UserDto
+  }
+}

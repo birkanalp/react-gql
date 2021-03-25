@@ -1,0 +1,5 @@
+fragment UserDto on User {
+  id
+  username
+  email
+}
